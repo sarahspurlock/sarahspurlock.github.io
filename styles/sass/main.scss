@@ -1,0 +1,145 @@
+@import "core.scss";
+
+/************************************************************
+*******                                         *************
+*******            HTML Element Types           *************
+*******                                         *************
+*************************************************************/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	margin: 0;
+	padding-top: 5px;
+	left: 0;
+	text-align: left;
+	border-top: 2px $mist solid;
+	width: auto;
+}
+
+a,
+a:hover,
+a:visited,
+{
+	color: #000;
+	text-decoration: none;
+}
+
+#resume-wrapper {
+	margin: 25px auto;
+	padding: 10px 20px 0px 20px;
+	border: 2px $mist solid;
+	max-width: 900px;
+	.list-heading {
+		font-weight: 600;
+		list-style: none;
+		font-size: 16px;
+	}
+	ul {
+		-webkit-padding-start: 0px;
+		text-indent: inherit;
+		list-style-position: outside;
+	}
+	li {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		font-size: 10.5pt;
+		span {
+			position: relative;
+			left: -5px;
+		}
+	}
+	.row {
+		padding: 0px 0px 15px 0px;
+		margin: 0;
+	}
+	.row.resume-title-row {
+		.col-md-8>span>h1 {
+			margin: 0 0 0 -23px;
+			padding: 0;
+		}
+	}
+	.row.skills-row>div>ul {
+		padding: 0;
+	}
+	.row.employment-row {
+		div>ul>li.list-heading {
+			margin-left: -18px;
+			text-indent: inherit;
+		}
+	}
+	.fa {
+		padding-right: 7px;
+	}
+}
+
+.bluestone {
+	background-color: $bluestone;
+}
+
+.brownautumn {
+	background-color: $brownautumn;
+}
+
+.orange {
+	background-color: $orange;
+}
+
+.contact-info {
+	width: 400px;
+	text-align: right;
+}
+
+.section-title {
+	font-size: 15px;
+	margin-left: -25px;
+	font-size: 22px;
+}
+
+
+/************************************************************
+*******                                         *************
+*******            SandBox Stylings             *************
+*******                                         *************
+*************************************************************/
+
+@keyframes drop {
+	0% {
+		top: -50%;
+	}
+	100% {
+		top: 200%;
+	}
+}
+
+.sky {
+	height: 100%;
+	perspective: 1000px;
+	position: absolute;
+	width: 100%;
+	&--is-raining {
+		background-color: #000;
+	}
+	overflow: hidden;
+}
+
+.rain {
+	animation: drop 4s infinite;
+	animation-timing-function: ease-in;
+	background: $dirtybaige;
+	height: 80px;
+	position: absolute;
+	width: 2px;
+	&--middle {
+		transform: translateZ(-500px);
+	}
+	&--back {
+		transform: translateZ(-1000px);
+	}
+}
+
+.rain-color {
+	background: linear-gradient(rgba(51, 107, 135, 0), 70%, rgba(230, 230, 230, 1));
+}

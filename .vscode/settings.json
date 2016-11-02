@@ -1,0 +1,55 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"git.allowLargeRepositories": true,
+	"editor.acceptSuggestionOnEnter": true,
+	"editor.insertSpaces": true,
+	"editor.mouseWheelZoom": true,
+	"editor.parameterHints": true,
+	"editor.codeLens": true,
+	"editor.folding": true,
+	"html.format.endWithNewline": true,
+	"html.format.maxPreserveNewLines": 2,
+	"editor.wrappingColumn": -1,
+	"editor.quickSuggestions": true,
+
+	// Controls if the editor should automatically close brackets after opening them
+	"editor.autoClosingBrackets": true,
+
+
+	"beautify.language": {
+		"js": {
+			"type": [
+				"javascript",
+				"json"
+			],
+			"filename": [
+				".jshintrc",
+				".jsbeautify"
+			]
+		},
+		"css": [
+			"css",
+			"scss"
+		],
+		"html": [
+			"htm",
+			"html"
+		]
+	},
+
+
+	"beautify.onSave": ["css", "html", "js", "html"],
+	"beautify.preserve_new_lines": true,
+	"beautify.end_with_newline": true,
+	"beautify.wrap_line_length": 0,
+	"beautify.onSaveIgnore": [
+		"**/*+(.|_|-)min.*"
+	],
+	"beautify.extra_liners": true,
+
+
+
+	"scss.validate": true,
+	"scss.lint.universalSelector": "ignore"
+
+}

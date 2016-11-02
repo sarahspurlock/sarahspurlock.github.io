@@ -1,0 +1,108 @@
+/************************************************************
+*******                                         *************
+*******            HTML Element Types           *************
+*******                                         *************
+*************************************************************/
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+hr {
+  margin: 0;
+  padding-top: 5px;
+  left: 0;
+  text-align: left;
+  border-top: 2px #90AFC5 solid;
+  width: auto; }
+
+a,
+a:hover,
+a:visited {
+  color: #000;
+  text-decoration: none; }
+
+#resume-wrapper {
+  margin: 25px auto;
+  padding: 10px 20px 0px 20px;
+  border: 2px #90AFC5 solid;
+  max-width: 900px; }
+  #resume-wrapper .list-heading {
+    font-weight: 600;
+    list-style: none;
+    font-size: 16px; }
+  #resume-wrapper ul {
+    -webkit-padding-start: 0px;
+    text-indent: inherit;
+    list-style-position: outside; }
+  #resume-wrapper li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 10.5pt; }
+    #resume-wrapper li span {
+      position: relative;
+      left: -5px; }
+  #resume-wrapper .row {
+    padding: 0px 0px 15px 0px;
+    margin: 0; }
+  #resume-wrapper .row.resume-title-row .col-md-8 > span > h1 {
+    margin: 0 0 0 -23px;
+    padding: 0; }
+  #resume-wrapper .row.skills-row > div > ul {
+    padding: 0; }
+  #resume-wrapper .row.employment-row div > ul > li.list-heading {
+    margin-left: -18px;
+    text-indent: inherit; }
+  #resume-wrapper .fa {
+    padding-right: 7px; }
+
+.bluestone {
+  background-color: #336B87; }
+
+.brownautumn {
+  background-color: #763626; }
+
+.orange {
+  background-color: #DD440A; }
+
+.contact-info {
+  width: 400px;
+  text-align: right; }
+
+.section-title {
+  font-size: 15px;
+  margin-left: -25px;
+  font-size: 22px; }
+
+/************************************************************
+*******                                         *************
+*******            SandBox Stylings             *************
+*******                                         *************
+*************************************************************/
+@keyframes drop {
+  0% {
+    top: -50%; }
+  100% {
+    top: 200%; } }
+
+.sky {
+  height: 100%;
+  perspective: 1000px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden; }
+  .sky--is-raining {
+    background-color: #000; }
+
+.rain {
+  animation: drop 4s infinite;
+  animation-timing-function: ease-in;
+  background: #D4CEC0;
+  height: 80px;
+  position: absolute;
+  width: 2px; }
+  .rain--middle {
+    transform: translateZ(-500px); }
+  .rain--back {
+    transform: translateZ(-1000px); }
+
+.rain-color {
+  background: linear-gradient(rgba(51, 107, 135, 0), 70%, #e6e6e6); }
