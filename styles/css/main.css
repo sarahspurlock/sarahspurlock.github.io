@@ -5,6 +5,8 @@
 *************************************************************/
 body {
   font-family: 'Open Sans', sans-serif; }
+  body h1 {
+    font-family: 'Questrial', sans-serif; }
 
 hr {
   margin: 0;
@@ -43,7 +45,7 @@ a:visited {
   #resume-wrapper .row {
     padding: 0px 0px 15px 0px;
     margin: 0; }
-  #resume-wrapper .row.resume-title-row .col-md-8 > span > h1 {
+  #resume-wrapper .row.resume-title-row .col-md-7 > span > h1 {
     margin: 0 0 0 -23px;
     padding: 0; }
   #resume-wrapper .row.skills-row > div > ul {
